@@ -45,6 +45,9 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
+                <div class="col-12 col-sm mt-5">
+                    <button type="button" onclick="scrollToCard()" class="btn btn-warning text-black">Reserve a Table</button>
+                </div>
             </div>
         </div>
     </header>
@@ -71,8 +74,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
+                <div class="media d-flex flex-row-reverse">
+                    <img  class=" ml-3 img-thumbnail " src="img/buffet.png" alt="">
+                    <div class="media-body">
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            </div>
+            </div>
             </div>
         </div>
 
@@ -89,6 +97,53 @@
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
             </div>
             </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <div class="card">
+                    <h2 class="card-header bg-warning text-white">Reserve a Table</h2>
+                    <div class="card-body">
+                        <div class="">
+                            <form>
+                                <div class="form-group row col-xs-12">
+                            <label for="guests" class="col-md-2 col-form-label">Number of Guests</label>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                         <label class="custom-control-label" for=""><input type="radio" class="custom-control-input " name="" id="">1</label>
+                                          </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <label class=" custom-control-label" for=""><input type="radio" class="custom-control-input " name="" id="">2</label>
+                                           </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                           <label class=" custom-control-label" for=""><input type="radio" class="custom-control-input " name="" id="">3</label>
+                                           </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                           <label class=" custom-control-label" for=""><input type="radio" class="custom-control-input " name="" id="">4</label>
+                                           </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                            <label class=" custom-control-label" for=""><input type="radio" class="custom-control-input " name="" id="">5</label>
+                                            </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                            <label class=" custom-control-label" for=""><input type="radio" class="custom-control-input " name="" id="">6</label>
+                                            </div>
+                            
+                        </div>
+                        <div class="form-group row">
+                            <label for="dat" class="col-sm-2 col-form-label">Date and Time</label>
+                            <div class="col-sm-2"><input type="text" class="form-control" id="date" name="date" placeholder="Date"></div>
+                             <div class="col-sm-2">  
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2 offset-2">
+                                <button class="btn btn-primary text-white">Reserve</button>
+                            </div>
+                        </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,6 +193,12 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script>
+         var elmnt= getElementById("card");
+         function scrollToCard(){
+             elmnt.scrollIntoView(false);
+         }
+     </script>
 </body>
 
 </html>
